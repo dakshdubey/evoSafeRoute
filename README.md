@@ -11,10 +11,18 @@
 - **Tamper Detection**: Root detection and mock location prevention.
 
 ## Installation
-Add the following dependency to your `build.gradle`:
-
 ```gradle
-implementation 'com.evofu:saferoute:1.0.0'
+implementation 'io.github.dakshdubey:saferoute:1.1.0'
+```
+
+## Deployment Info
+The project is configured for Maven Central under the GroupID `io.github.dakshdubey`.
+
+To deploy:
+1. Ensure you have your GPG key installed.
+2. Run:
+```bash
+mvn clean deploy -s settings.xml -DskipTests
 ```
 
 ## Quick Start
